@@ -1,0 +1,659 @@
+@charset "utf-8";
+
+#pan {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 99;
+    text-align: center;
+}
+#pan > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    animation: spin 0.3s linear infinite;
+}
+@keyframes spin {
+    0% {transform: translate(-50%, -50%) rotateY(0deg);}
+    100% {transform: translate(-50%, -50%) rotateY(180deg);}
+} 
+#wrap {
+    opacity: 0;
+}
+/* 로딩 화면 */
+html {
+    scroll-behavior: smooth;
+}
+/* 스크롤 부드럽게 */
+::-webkit-scrollbar {
+    width: 12px; /* 스크롤바의 너비 */
+}
+
+/* 스크롤바의 트랙 (스크롤바가 이동하는 영역) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* 트랙의 배경색 */
+}
+
+/* 스크롤바 핸들 (스크롤바의 드래그 가능한 부분) */
+::-webkit-scrollbar-thumb {
+    background: #FDE700; /* 핸들의 배경색 */
+    border-radius: 10px; /* 핸들의 둥근 모서리 */
+}
+
+/* header */
+header {
+    background: #fff;
+    height: 80px;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+.menu {
+    background: url(../img/logo_img/menu.png) no-repeat center/cover;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+header .logo a {
+    background: url(../img/logo_img/logo.png) no-repeat center/cover;
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+nav .gnb {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+nav .gnb li {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+nav .gnb li a {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+nav .gnb li a:hover {
+    color: #fde700;
+}
+nav .gnb li:nth-child(3) > a {
+    color: #fde700;
+}
+/* //header */
+
+/* m_nav */
+.m_nav  {
+    display: none;
+}
+/* //m_nav */
+
+/* #main 공통 */
+#main {
+    padding: 150px 30px;
+    box-sizing: border-box;
+}
+#main h2 {
+    background: url(../img/logo_img/y_ball3.png) no-repeat bottom 5.5px right;
+    display: inline-block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+/* 아티스트 이름 부분 (공통아님) */
+.toy { /* 유희열 */
+    width: 245px;
+}
+
+.name {
+    width: 160px;
+}
+/* 아티스트 이름 부분 (공통아님) */
+.sub_text {
+    font-size: 28px;
+    font-weight: 600;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+.site {
+    display: flex;
+    justify-content: space-between;
+    max-width: 365px;
+    margin-bottom: 40px;
+}
+.site a {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.6;
+    position: relative;
+}
+.site a:hover {
+    opacity: 1;
+}
+.site a:after {
+    position: absolute;
+    content: '';
+    top: 50%; right: -10px;
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: #fde700;
+}
+.site a:last-child:after {
+    background: none;
+}
+.profile {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.profile iframe {
+    width: 1420px;
+    height: 600px;
+}
+/* 아티스트 프로필 사진부분 (공통아님) */
+.profile figure {
+    background: no-repeat center/cover;
+    width: 410px;
+    height: 600px;
+}
+.profile .toy_photo { /* 유희열 */
+    background-image: url(../img/artist/toy_photo.png);
+}
+.profile .mijoo_photo { /* 이미주 */
+    background-image: url(../img/artist/mijoo_photo.jpg);
+}
+.profile .kyuhyun_photo { /* 규현 */
+    background-image: url(../img/artist/kyuhyun_photo.jpg);
+}
+.profile .kwon_jinah_photo { /* 권진아 */
+    background-image: url(../img/artist/kwonjinah_photo.png);
+}
+.profile .lee_jinah_photo { /* 이진아 */
+    background-image: url(../img/artist/leejinah_photo.jpg);
+}
+.profile .jung_seunghwan_photo { /* 정승환 */
+    background-image: url(../img/artist/jung_seunghwan_photo.jpg);
+}
+.profile .jaesuk_photo { /* 유재석 */
+    background: url(../img/artist/jaesuk_photo.png) top;
+    width: 100%;
+    height: 1500px;
+}
+.profile .hyori_photo { /* 이효리 */
+    background: url(../img/artist/artist08.jpg) center;
+    width: 100%;
+    height: 1500px;
+}
+/* 아티스트 프로필 사진부분 (공통아님) */
+.main_text {
+    max-width: 50%;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-bottom: 120px;
+}
+.main_text > strong {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+.main_text .text {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.7;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.main_text .main_text2 {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+.main_text .text2 {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.7;
+    line-height: 1.6;
+}
+/* //#main 공통 */
+
+/* content 공통*/
+.content {
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+.content .title {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .title a {
+    display: block;
+    margin: 0 0 80px;
+    font-size: 24px;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+.content .title a:hover {
+    color: #fde700;
+}
+/* //content 공통*/
+
+/* 슬라이드 공통 */
+.swiper {
+    height: 330px;
+}
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide .card {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.swiper-slide .card > p {
+    font-size: 15px;
+    position: absolute;
+    line-height: 1.6;
+}
+.swiper-slide .card > p > span {
+    display: block;
+    font-size: 13px;
+    opacity: 0.6;
+    line-height: 1.3;
+}
+:root { /* 슬라이드 버튼 색상 변경 */
+    --swiper-theme-color: #FDE700 !important;
+}
+/* //슬라이드 공통 */
+
+/* album_slide 공통 */
+.swiper-slide .card .album { /* 앨범 이미지 */
+    position: absolute;
+    left: 17.5%;
+    width: auto;
+    height: 85.3%;
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+.swiper-slide .card .lp { /* lp판 이미지 */
+    position: absolute;
+    right: 18%; top: 1%;
+    width: auto;
+    height: 84%;
+    z-index: -1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 50%;
+    animation: rotate 2s linear infinite;
+    transition: all 0.5s;
+}
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+} 
+.album_slide .swiper-slide .card > p { /* 텍스트 위치 */
+    bottom: 0; left: 17.5%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.album_slide .swiper-slide .card:hover .album {
+    left: 3%;
+}
+.album_slide .swiper-slide .card:hover .lp {
+    right: 3%;
+}
+.album_slide .swiper-slide .card:hover > p {
+    opacity: 1;
+    left: 3%;
+}
+.streaming_btn {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 15%;
+    margin: 40px auto 0;
+}
+.streaming_btn a {
+    display: block;
+    background: no-repeat center/cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+.streaming_btn a:hover {
+    opacity: 0.7;
+}
+.streaming_btn .melon {
+    background-image: url(../img/logo_img/melon.jpg);
+}
+.streaming_btn .bugs {
+    background-image: url(../img/logo_img/bugs.png);
+}
+.streaming_btn .apple_music {
+    background-image: url(../img/logo_img/apple_music.png);
+}
+.streaming_btn .flo {
+    background-image: url(../img/logo_img/flo_logo.png);
+}
+.album_slide .swiper-button-next,
+.album_slide .swiper-button-prev { /* 슬라이드 버튼 위치 */
+    top: 43%;
+}
+/* //album_slide 공통 */
+
+/* video_slide 공통 */
+.video_slide .swiper-wrapper .swiper-slide iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 30px;
+}
+.video_slide .swiper-button-next,
+.video_slide .swiper-button-prev { /* 슬라이드 버튼 위치 */
+    top: 48%;
+}
+/* //video_slide 공통 */
+
+/* concert(유희열) */
+.concert_cont {
+    display: flex;
+    justify-content: left;
+}
+.concert {
+    width: 400px;
+    height: 330px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+.concert .concert_img {
+    max-width: 100%;
+    height: 82%;
+}
+.concert > p > span {
+    display: block;
+    font-size: 13px;
+    opacity: 0.6;
+}
+/* //concert(유희열) */
+
+/* concert(정승환) */
+.concert_slide .swiper-slide .c1 > p {
+    font-size: 14px;
+}
+/* //concert(정승환) */
+
+/* concert_silde 공통 */
+.concert_slide {
+    height: 550px;
+}
+.concert_slide .swiper-slide {
+    width: 100%;
+    height: 90%;
+}
+.swiper-slide .card .concert { /* 슬라이드 이미지 부분 */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+.concert_slide .swiper-slide .card:before {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 0.3s;
+}
+.concert_slide .swiper-slide .card > p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    left: 5%; bottom: 5%;
+    width: 80%;
+    z-index: 1;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.concert_slide .swiper-slide .card > p > span {
+    display: block;
+    font-size: 15px;
+    opacity: 0.6;
+}
+.concert_slide .swiper-slide .card:hover:before,
+.concert_slide .swiper-slide .card:hover > p {
+    opacity: 1;
+}
+/* //concert_silde 공통 */
+
+/* contents_slide 공통 */
+.contents_slide {
+    height: 500px;
+}
+.contents_slide .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide .card .contents { /* 슬라이드 이미지 부분 */
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.contents_slide .swiper-slide .card:before {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 0.3s;
+}
+.contents_slide .swiper-slide .card > p {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    width: 80%;
+    left: 5%; bottom: 5%;
+    z-index: 1;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.contents_slide .swiper-slide .card:hover:before,
+.contents_slide .swiper-slide .card:hover > p {
+    opacity: 1;
+}
+/* //contents_slide 공통 */
+
+/* 탭 메뉴 */
+.tap1,
+.tap2,
+.tap3,
+.tap4 {
+    display: none;
+    margin-bottom: 120px;
+}
+.on {
+    display: block;
+}
+.active {
+    color: #fde700;
+}
+/* 탭 메뉴 */
+
+/* Back to the list */
+.back_list {
+    text-align: center;
+}
+.back_list > a {
+    display: inline-block;
+    text-align: right;
+    background: url(../img/logo_img/arrow_left.png) no-repeat left center/25px;
+    width: 195px;
+    font-size: 28px;
+    font-weight: 600;
+    opacity: 0.6;
+    transition: all 0.2s;
+}
+.back_list > a:hover {
+    opacity: 1;
+}
+.m_top {
+    display: none;
+}
+
+/* footer */
+footer {
+    background: #fafafa;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont {
+    width: 528px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont .logo a {
+    background: url(../img/logo_img/logo.png) no-repeat center/cover;
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+.cont .addres {
+    width: 325px;
+}
+
+.cont .addres .add01 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cont .addres .add02 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+
+.cont .addres .map {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 97px;
+    background: url(../img/logo_img/gps.png) no-repeat bottom 2px right/18px;
+    opacity: 0.6;
+    transition: all 0.2s;
+}
+
+.cont .addres .map:hover {
+    opacity: 1;
+}
+
+.right {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.right .back > a {
+    display: block;
+    width: 170px;
+    background: url(../img/logo_img/arrow_up.png) no-repeat bottom 2px right/16px;
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0.6;
+    transition: all 0.2s;
+    margin-bottom: 71px;
+}
+.right .back > a:hover {
+    opacity: 1;
+}
+.right .sns {
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+    margin-top: 100px;
+}
+
+.right .sns a {
+    display: block;
+    background: no-repeat center/cover;
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s;
+}
+
+.right .sns a:hover {
+    opacity: 1;
+}
+
+.right .sns .insta {
+    background-image: url(../img/logo_img/instagram-logo.png);
+}
+
+.right .sns .facebook {
+    background-image: url(../img/logo_img/facebook-logo.png);
+}
+
+.right .sns .twiter {
+    background-image: url(../img/logo_img/twiter-logo.png);
+}
+
+.right .sns .youtube {
+    background-image: url(../img/logo_img/youtube_logo.png);
+}
+.right .sns .shopping {
+    background-image: url(../img/logo_img/shopping_basket.png);
+}
+
+.right .back .copy {
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    opacity: 0.4;
+}
+/* //footer */

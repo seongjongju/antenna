@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+/* 데스크탑 1600px */
+#list .artists a {
+    width: 330px;
+    height: 330px;
+}
+#list .artists a p {
+    line-height: 330px;
+}
+#list .artists a p+p {
+    line-height: 388px;
+}
+/* 데스크탑 1600px */
+
+/* 데스크탑 1440px */
+@media screen and (max-width: 1440px) {
+    #list .artists a {
+        width: 300px;
+        height: 300px;
+    }
+    #list .artists a p {
+        line-height: 300px;
+    }
+    #list .artists a p+p {
+        line-height: 358px;
+    }
+}
+/* 데스크탑 1440px */
+
+/* 데스크탑 1280px */
+@media screen and (max-width: 1280px) {
+    #list .artists a {
+        width: 260px;
+        height: 260px;
+    }
+    #list .artists a p {
+        line-height: 260px;
+    }
+    #list .artists a p+p {
+        line-height: 318px;
+    }
+}
+/* 데스크탑 1280px */
+
+/* 태블릿 1024px */
+@media screen and (max-width: 1024px) {
+/* list */
+#list {
+    padding: 6.75rem 1.87rem;
+}
+#list .sub_text {
+   width: 80%;
+}
+#list .text {
+   width: 80%;
+   font-size: 1rem;
+}
+#list .artists a {
+    width: 13rem;
+    height: 13rem;
+}
+#list .artists a p {
+    line-height: 13rem;
+}
+#list .artists a p+p {
+    line-height: 17rem;
+}
+/* //list */
+
+/* footer */
+footer {  
+    display: block;
+    position: relative;
+}
+.cont {
+    display: block;
+}
+.cont .logo a {
+    width: 3.1rem;
+    height: 3.1rem;
+    margin-bottom: 1.25rem;
+}
+.right {
+    display: block;
+}
+.right .back > a {
+    position: absolute;
+    top: 2.5rem; right: 1.87rem;
+}
+.right .copy {
+    position: absolute;
+    right: 1.87rem; bottom: 2.5rem;
+}
+.right .sns {
+    margin: 1.25rem 0 0;
+}
+}
+/* //태블릿 */
+
+/* 태블릿 */
+@media screen and (max-width: 768px) {
+/* header */
+header {
+    height: 4.3rem;
+    padding: 0 0.6rem;
+}
+.menu {
+    display: block;
+}
+header .logo {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+header .logo a {
+    width: 3.1rem;
+    height: 3.1rem;
+}
+nav .gnb {
+    display: none;
+}
+/* m_nav */
+.m_nav {
+    display: block;
+    position: fixed;
+    top: 0; left: -100%;
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transition: all 0.5s;
+}
+.m_nav .snb_back {
+    display: inline-block;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 1.3rem; right: 1.3rem;
+}
+.m_nav .sub {
+    position: absolute;
+    top: 20rem; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.m_nav .sub li a {
+    display: block;
+    font-size: 1.87rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+.m_nav .sub li:nth-child(3) > a {
+    color: #fde700;
+}
+.m_nav.active {
+    left: 0;
+}
+
+/* //m_nav */
+/* //header */
+
+#list {
+    padding: 6.75rem 1.87rem;
+}
+
+/* list */
+#list .sub_text {
+   width: 80%;
+}
+#list .text {
+   width: 80%;
+   font-size: 1rem;
+}
+#list .artists a {
+    width: 18rem;
+    height: 18rem;
+}
+#list .artists a p {
+    line-height: 18rem;
+}
+#list .artists a p+p {
+    line-height: 22rem;
+}
+/* //list */
+}
+/* //태블릿 */
+
+/* 모바일 */
+@media screen and (max-width: 440px) {
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+    /* header */
+    header {
+        height: 3.5rem;
+        padding: 0 0.5rem;
+    }
+    header .logo a {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .m_nav .snb_back {
+        display: inline-block;
+        font-size: 1rem;
+        position: absolute;
+        top: 1.3rem;
+        right: 1.3rem;
+    }
+    .m_nav .sub li a {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+    /* header */
+
+    /* list */
+    #list {
+        padding: 6rem 1.5rem 3rem;
+    }
+    #list > h2 {
+        font-size: 1.6rem;
+        width: 7.8rem;
+    }
+    #list .sub_text {
+        width: 100%;
+    }
+    #list .text {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    #list .artists {
+        max-width: 100%; 
+    }
+    #list .artists a {
+        width: 8.5rem;
+        height: 8.5rem;
+    }
+    #list .artists a p {
+        line-height: 8.5rem;
+        font-size: 1rem;
+    }
+    #list .artists a p+p {
+        line-height: 10.8rem;
+        font-size: 0.8rem;
+    }
+    /* list */
+
+    /* footer */
+    footer {
+        padding: 2rem 1.5rem 4rem;
+    }
+    .cont {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    .right .back>a {
+        display: none;
+    }
+    .right .sns {
+        margin: 1rem 0 0;
+    }
+    .right .copy {
+        left: 1.5rem;
+        bottom: 0;
+        padding-bottom: 2rem;
+    }
+    /* 탑 버튼 */
+    .m_top {
+        display: block;
+        text-align: right;
+    }
+    .m_top > a {
+        display: inline-block;
+        text-align: left;
+        width: 3rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 2.5rem;
+        background: url(../img/logo_img/arrow_up.png) no-repeat right / 18px;
+        opacity: 0.6;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #list .artists a {
+        width: 8rem;
+        height: 8rem;
+    }
+    #list .artists a p {
+        line-height: 8rem;
+    }
+    #list .artists a p+p {
+        line-height: 10.3rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #list .artists a {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+    #list .artists a p {
+        line-height: 7.5rem;
+    }
+    #list .artists a p+p {
+        line-height: 9.7rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #list .artists a {
+        width: 7rem;
+        height: 7rem;
+    }
+    #list .artists a p {
+        line-height: 7rem;
+    }
+    #list .artists a p+p {
+        line-height: 9.2rem;
+    }
+}
+/* 모바일 */

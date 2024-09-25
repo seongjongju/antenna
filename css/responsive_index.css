@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+/* 데스크탑 1600px */
+#feed .swiper {
+    height: 308px;
+}
+#artist .swiper {
+    height: 308px;
+}
+/* 데스크탑 1600px */
+
+/* 데스크탑 1440px */
+@media screen and (max-width: 1440px) {
+    /* about */
+#about .text {
+    top: 50%;
+}
+#about .btn01 {
+    bottom: 35%;
+}
+#feed .swiper {
+    height: 345px;
+}
+#artist .swiper {
+    height: 345px;
+}
+/* //about */
+}
+/* 데스크탑 1440px */
+
+/* 데스크탑 1280px */
+@media screen and (max-width: 1280px) {
+    #feed .swiper {
+        height: 406px;
+    }
+    #artist .swiper {
+        height: 406px;
+    }
+}
+/* 데스크탑 1280px */
+
+/* 태블릿 1024px */
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 3.75rem 1.87rem;
+    }
+     /* main_video */
+     .main_video {
+        height: 40rem;
+    }
+    /* //main_video */
+
+    /* about */
+    #about>h2 {
+        top: 3.5rem;
+    }
+
+    #about .sub_text {
+        top: 7.75rem;
+        width: 80%;
+    }
+
+    #about .text {
+        top: 14.75rem;
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    #about .btn01 {
+        bottom: 40%;
+    }
+    /* //about */
+
+    #feed .swiper {
+        height: 321px;
+    }
+    #artist .swiper {
+        height: 321px;
+    }
+
+    /* footer */
+    footer {
+        display: block;
+        position: relative;
+    }
+
+    .cont {
+        display: block;
+    }
+
+    .cont .logo a {
+        width: 3.1rem;
+        height: 3.1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .right {
+        display: block;
+    }
+
+    .right .back>a {
+        position: absolute;
+        top: 2.5rem;
+        right: 1.87rem;
+    }
+
+    .right .copy {
+        position: absolute;
+        right: 1.87rem;
+        bottom: 2.5rem;
+    }
+
+    .right .sns {
+        margin: 1.25rem 0 0;
+    }
+}
+
+/* //태블릿 */
+
+/* 태블릿 768px */
+@media screen and (max-width: 768px) {
+    /* header */
+    header {
+        height: 4.3rem;
+        padding: 0 0.6rem;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    header .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header .logo a {
+        width: 3.1rem;
+        height: 3.1rem;
+    }
+
+    nav .gnb {
+        display: none;
+    }
+
+    /* m_nav */
+    .m_nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 101;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        transition: all 0.5s;
+    }
+
+    .m_nav .snb_back {
+        display: inline-block;
+        font-size: 1.3rem;
+        position: absolute;
+        top: 1.3rem;
+        right: 1.3rem;
+    }
+
+    .m_nav .sub {
+        position: absolute;
+        top: 20rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .m_nav .sub li a {
+        display: block;
+        font-size: 1.87rem;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+
+    .m_nav .sub li:nth-child(1)>a {
+        color: #fde700;
+    }
+
+    .m_nav.active {
+        left: 0;
+    }
+
+    /* //m_nav */
+    /* //header */
+
+    /* main_video */
+    .main_video {
+        padding-top: 4.2rem;
+        height: 31.25rem;
+    }
+    /* //main_video */
+
+    /* about */
+    #about .text {
+        top: 16.75rem;
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    #about .btn01 {
+        bottom: 30%;
+    }
+    /* about */
+
+    #feed .swiper {
+        height: 354px;
+    }
+    #artist .swiper {
+        height: 354px;
+    }
+}
+/* //태블릿 */
+
+/* 모바일 */
+@media screen and (max-width: 440px) {
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    /* header */
+    header {
+        height: 3.5rem;
+        padding: 0 0.5rem;
+    }
+
+    header .logo a {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .m_nav .snb_back {
+        display: inline-block;
+        font-size: 1rem;
+        position: absolute;
+        top: 1.3rem;
+        right: 1.3rem;
+    }
+    .m_nav .sub li a {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+    /* header */
+
+    /* .main_video */
+    .main_video {
+        padding-top: 3.27rem;
+        height: 15rem;
+    }
+    /* .main_video */
+
+    section {
+        padding: 3rem 1.5rem;
+    }
+
+    /* about */
+    #about {
+        background: url(../img/about/about3.png) fixed no-repeat center/cover;
+    }
+    #about>h2 {
+        width: 7.7rem;
+        font-size: 1.6rem;
+    }
+
+    #about .text {
+        top: 18rem;
+        font-size: 0.8rem;
+        width: 80%;
+    }
+    #about .btn01 {
+        bottom: 20%;
+    }
+    /* about */
+
+    /* feed_swiper */
+    #feed>h2 {
+        width: 13.6rem;
+        font-size: 1.6rem;
+    }
+
+    #feed .swiper {
+        height: 9rem;
+    }
+
+    /* artist slide */
+    #artist>h2 {
+        width: 15rem;
+        font-size: 1.6rem;
+    }
+
+    #artist .swiper {
+        height: 9rem;
+    }
+
+    #artist .swiper .swiper-slide a p {
+        line-height: 9rem;
+        font-size: 1rem;
+    }
+
+    #artist .swiper .swiper-slide a p+p {
+        font-family: "Dosis", sans-serif;
+        line-height: 11.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* artist slide */
+
+    /* footer */
+    footer {
+        padding: 2rem 1.5rem 4rem;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right .back>a {
+        display: none;
+    }
+
+    .right .sns {
+        margin: 1rem 0 0;
+    }
+
+    .right .copy {
+        left: 1.5rem;
+        bottom: 0;
+        padding-bottom: 2rem;
+    }
+
+    /* 탑 버튼 */
+    .m_top {
+        display: block;
+        text-align: right;
+    }
+
+    .m_top>a {
+        display: inline-block;
+        text-align: left;
+        width: 3rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 2.5rem;
+        background: url(../img/logo_img/arrow_up.png) no-repeat right / 18px;
+        opacity: 0.6;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #feed .swiper {
+        height: 165px;
+    }
+    #artist .swiper {
+        height: 165px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #feed .swiper {
+        height: 157px;
+    }
+    #artist .swiper {
+        height: 157px;
+    }
+}
+/* 모바일 */

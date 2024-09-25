@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+/* 데스크탑 1600px 1440px */
+.contect .left {
+    width: 60%;
+}
+.contect .rights {
+    width: 35%;
+}
+/* 데스크탑 1600px 1440px */
+
+/* 데스크탑 1280px */
+@media screen and (max-width: 1280px) {
+    .contect .left {
+        width: 70%;
+    }
+    .contect .rights {
+        width: 25%;
+    }
+}
+/* 데스크탑 1280px */
+
+/* 태블릿 1024px */
+@media screen and (max-width: 1024px)  {
+/* section */
+section {
+    padding: 6.75rem 1.87rem;
+}
+section .sub_text {
+    width: 80%;
+}
+/* //section */
+
+.contect .left {
+    width: 45%;
+}
+.contect .rights {
+    width: 45%;
+}
+
+/* inquiry */
+.contect .inquiry {
+    display: block;
+}
+.contect .inquiry a {
+    width: 80%;
+    margin-bottom: 0.62rem;
+}
+/* footer */
+footer {  
+    display: block;
+    position: relative;
+}
+.cont {
+    display: block;
+}
+.cont .logo a {
+    width: 3.1rem;
+    height: 3.1rem;
+    margin-bottom: 1.25rem;
+}
+.right {
+    display: block;
+}
+.right .back > a {
+    position: absolute;
+    top: 2.5rem; right: 1.87rem;
+}
+.right .copy {
+    position: absolute;
+    right: 1.87rem; bottom: 2.5rem;
+}
+.right .sns {
+    margin: 1.25rem 0 0;
+}
+}
+/* 태블릿 1024px */
+
+/* 태블릿 768px */
+@media screen and (max-width: 768px) {
+    /* header */
+header {
+    height: 4.3rem;
+    padding: 0 0.6rem;
+}
+.menu {
+    display: block;
+}
+header .logo {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+header .logo a {
+    width: 3.1rem;
+    height: 3.1rem;
+}
+nav .gnb {
+    display: none;
+}
+/* m_nav */
+.m_nav {
+    display: block;
+    position: fixed;
+    top: 0; left: -100%;
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transition: all 0.5s;
+}
+.m_nav .snb_back {
+    display: inline-block;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 1.3rem; right: 1.3rem;
+}
+.m_nav .sub {
+    position: absolute;
+    top: 20rem; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.m_nav .sub li a {
+    display: block;
+    font-size: 1.87rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+.m_nav .sub li:nth-child(4) > a {
+    color: #fde700;
+}
+.m_nav.active {
+    left: 0;
+}
+/* //m_nav */
+/* //header */
+}
+/* 태블릿 768px */
+
+/* 모바일 */
+@media screen and (max-width: 440px) {
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+    /* header */
+    header {
+        height: 3.5rem;
+        padding: 0 0.5rem;
+    }
+    header .logo a {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .m_nav .snb_back {
+        display: inline-block;
+        font-size: 1rem;
+        position: absolute;
+        top: 1.3rem;
+        right: 1.3rem;
+    }
+    .m_nav .sub li a {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+    /* header */
+
+    /* section */
+    section {
+        padding: 6rem 1.5rem 3rem;
+    }
+    section h2 {
+        font-size: 1.6rem;
+        width: 9.3rem;
+    }
+    section .sub_text {
+       width: 100%;
+    }
+    section .text {
+        font-size: 0.8rem;
+    }
+
+    /* contect */
+    .contect {
+        display: block;
+    }
+    .contect .left {
+        width: 100%;
+    }
+    /* addres */
+    .contect .addres {
+        margin-bottom: 1rem;
+    }
+    /* addres */
+
+    /* inquiry */
+    .contect .inquiry a {
+        font-size: 0.8rem;
+    }
+    .contect .inquiry a:last-child {
+        margin-bottom: 2rem;
+    }
+    /* inquiry */
+
+    /* rights */
+    .contect .rights {
+        width: 100%;
+    }
+    /* rights */
+
+    /* maps */
+    iframe {
+        height: 15rem;
+    }
+    /* maps */
+
+    /* footer */
+    footer {
+        padding: 2rem 1.5rem 4rem;
+    }
+    .cont {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    .right .back>a {
+        display: none;
+    }
+    .right .sns {
+        margin: 1rem 0 0;
+    }
+    .right .copy {
+        left: 1.5rem;
+        bottom: 0;
+        padding-bottom: 2rem;
+    }
+    /* 탑 버튼 */
+    .m_top {
+        display: block;
+        text-align: right;
+    }
+    .m_top > a {
+        display: inline-block;
+        text-align: left;
+        width: 3rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 2.5rem;
+        background: url(../img/logo_img/arrow_up.png) no-repeat right / 18px;
+        opacity: 0.6;
+    }
+}

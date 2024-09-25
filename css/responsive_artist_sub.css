@@ -1,0 +1,870 @@
+@charset "utf-8";
+
+/* 데스크탑 1600px */
+.profile iframe {
+    width: 72%;
+}
+
+.profile figure {
+    width: 27%;
+}
+
+/* album_slide 공통 */
+.swiper-slide .card .album {
+    height: 71.3%;
+}
+
+.swiper-slide .card .lp {
+    height: 69%;
+}
+
+.album_slide .swiper-slide .card>p {
+    bottom: 15%;
+}
+
+.album_slide .swiper-slide .card:hover .album {
+    left: 2.2%;
+}
+
+.album_slide .swiper-slide .card:hover .lp {
+    right: 2.2%;
+}
+
+.album_slide .swiper-slide .card:hover>p {
+    left: 2.2%;
+}
+
+.streaming_btn {
+    max-width: 18%;
+}
+
+.album_slide .swiper-button-next,
+.album_slide .swiper-button-prev {
+    /* 슬라이드 버튼 위치 */
+    top: 36%;
+}
+
+/* //album_slide 공통 */
+.concert_slide {
+    height: 500px;
+}
+.concert_slide .swiper-slide {
+    height: 80%;
+}
+.concert_slide .swiper-slide .card > p {
+    font-size: 16px;
+}
+
+.contents_slide {
+    height: 400px;
+}
+
+/* 데스크탑 1600px */
+
+/* 데스크탑 1440px */
+@media screen and (max-width: 1440px) {
+    .profile iframe {
+        width: 66%;
+    }
+
+    .profile figure {
+        width: 33%;
+    }
+
+    /* album_slide 공통 */
+    .swiper-slide .card .album {
+        height: 85.3%;
+    }
+
+    .swiper-slide .card .lp {
+        height: 84%;
+    }
+
+    .album_slide .swiper-slide .card>p {
+        bottom: 0;
+    }
+
+    .album_slide .swiper-slide .card:hover .album {
+        left: 3%;
+    }
+
+    .album_slide .swiper-slide .card:hover .lp {
+        right: 3%;
+    }
+
+    .album_slide .swiper-slide .card:hover>p {
+        left: 3%;
+    }
+
+    .streaming_btn {
+        max-width: 20%;
+    }
+
+    .album_slide .swiper-button-next,
+    .album_slide .swiper-button-prev { /* 슬라이드 버튼 위치 */
+        top: 43%;
+    }
+    /* //album_slide 공통 */
+    .concert_slide {
+        height: 430px;
+    }
+
+    .concert_slide .swiper-slide {
+        height: 80%;
+    }
+
+    .contents_slide {
+        height: 350px;
+    }
+    .contents_slide .swiper-slide .card > p {
+        font-size: 16px;
+    }
+}
+
+/* 데스크탑 1440px */
+
+/* 데스크탑 1280px */
+@media screen and (max-width: 1280px) {
+    .profile iframe {
+        width: 69%;
+    }
+
+    .profile figure {
+        width: 30%;
+    }
+
+    /* album_slide 공통 */
+    .swiper-slide .card .album {
+        height: 75.3%;
+    }
+
+    .swiper-slide .card .lp {
+        height: 73%;
+    }
+
+    .album_slide .swiper-slide .card>p {
+        bottom: 11%;
+    }
+    .album_slide .swiper-button-next,
+    .album_slide .swiper-button-prev { /* 슬라이드 버튼 위치 */
+        top: 37.5%;
+    }
+
+    /* //album_slide 공통 */
+    .concert_slide {
+        height: 480px;
+    }
+
+    .concert_slide .swiper-slide {
+        height: 80%;
+    }
+
+    .contents_slide {
+        height: 400px;
+    }
+}
+
+/* 데스크탑 1280px */
+
+/* 태블릿 1024px */
+@media screen and (max-width: 1024px) {
+    .profile iframe {
+        width: 66%;
+        height: 30rem;
+    }
+
+    .profile figure {
+        width: 33%;
+        height: 30rem;
+    }
+
+    .main_text {
+        max-width: 80%;
+        font-family: "Noto Sans KR", sans-serif;
+        margin-bottom: 120px;
+    }
+
+    /* album_slide 공통 */
+    .swiper-slide .card .album {
+        /* 앨범 이미지 */
+        height: 60%;
+    }
+
+    .swiper-slide .card .lp {
+        /* lp판 이미지 */
+        height: 57.1%;
+    }
+    .album_slide .swiper-slide .card>p {
+        bottom: 26%;
+    }
+
+    .album_slide .swiper-slide .card:hover .album {
+        left: 2%;
+    }
+
+    .album_slide .swiper-slide .card:hover .lp {
+        right: 2%;
+    }
+
+    .album_slide .swiper-slide .card:hover>p {
+        left: 2%;
+    }
+
+    .streaming_btn {
+        max-width: 30%;
+    }
+
+    .album_slide .swiper-button-next,
+    .album_slide .swiper-button-prev {
+        /* 슬라이드 버튼 위치 */
+        top: 29.5%;
+    }
+
+    /* //album_slide 공통 */
+
+    /* concert_slide */
+    .concert_slide {
+        height: 23rem;
+    }
+
+    .concert_slide .swiper-slide {
+        height: 80%;
+    }
+    .concert_slide .swiper-slide .card > p {
+        font-size: 14px;
+    }
+    .concert_slide .swiper-slide .card > p > span {
+        font-size: 12px;
+    }
+
+    /* //concert_slide */
+
+    /* contents_slide 공통 */
+    .contents_slide {
+        height: 19rem;
+    }
+
+    /* contents_slide 공통 */
+
+    /* footer */
+    footer {
+        display: block;
+        position: relative;
+    }
+
+    .cont {
+        display: block;
+    }
+
+    .cont .logo a {
+        width: 3.1rem;
+        height: 3.1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .right {
+        display: block;
+    }
+
+    .right .back>a {
+        position: absolute;
+        top: 2.5rem;
+        right: 1.87rem;
+    }
+
+    .right .copy {
+        position: absolute;
+        right: 1.87rem;
+        bottom: 2.5rem;
+    }
+
+    .right .sns {
+        margin: 1.25rem 0 0;
+    }
+}
+
+/* 태블릿 1024px */
+
+/* 태블릿 768px */
+@media screen and (max-width: 768px) {
+
+    /* header */
+    header {
+        height: 4.3rem;
+        padding: 0 0.6rem;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    header .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header .logo a {
+        width: 3.1rem;
+        height: 3.1rem;
+    }
+
+    nav .gnb {
+        display: none;
+    }
+
+    /* m_nav */
+    .m_nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 101;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        transition: all 0.5s;
+    }
+
+    .m_nav .snb_back {
+        display: inline-block;
+        font-size: 1.3rem;
+        position: absolute;
+        top: 1.3rem;
+        right: 1.3rem;
+    }
+
+    .m_nav .sub {
+        position: absolute;
+        top: 20rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .m_nav .sub li a {
+        display: block;
+        font-size: 1.87rem;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+
+    .m_nav .sub li:nth-child(3)>a {
+        color: #fde700;
+    }
+
+    .m_nav.active {
+        left: 0;
+    }
+
+    /* //m_nav */
+    /* //header */
+
+    /* #main 공통 */
+    .profile {
+        display: block;
+    }
+
+    .profile iframe {
+        display: none;
+    }
+
+    .profile figure {
+        width: 100%;
+        height: 62.5rem;
+    }
+
+    .main_text {
+        max-width: 100%;
+    }
+
+    .main_text .text {
+        font-size: 1rem;
+    }
+
+    /* album_slide 공통 */
+    .swiper-slide .card .album {
+        /* 앨범 이미지 */
+        height: 66%;
+    }
+
+    .swiper-slide .card .lp {
+        /* lp판 이미지 */
+        height: 64%;
+    }
+    .album_slide .swiper-slide .card>p {
+        bottom: 20%;
+    }
+
+    .album_slide .swiper-slide .card:hover .album {
+        left: 3%;
+    }
+
+    .album_slide .swiper-slide .card:hover .lp {
+        right: 3%;
+    }
+
+    .album_slide .swiper-slide .card:hover>p {
+        left: 3%;
+    }
+    /* //album_slide 공통 */
+
+    /* video_slide 공통 */
+    .video_slide .swiper-wrapper .swiper-slide iframe {
+        height: 90%;
+    }
+
+    .video_slide .swiper-button-next,
+    .video_slide .swiper-button-prev {
+        /* 슬라이드 버튼 위치 */
+        top: 45%;
+    }
+
+    /* //video_slide 공통 */
+
+    /* concert_silde 공통 */
+    .concert_slide {
+        height: 24rem;
+    }
+
+    .concert_slide .swiper-slide {
+        height: 80%;
+    }
+
+    /* //concert_silde 공통 */
+
+    /* contents_slide 공통 */
+    .contents_slide {
+        height: 19rem;
+    }
+
+    .swiper-slide .card .contents {
+        /* 슬라이드 이미지 부분 */
+        height: 100%;
+    }
+
+    /* //contents_slide 공통 */
+}
+
+/* //태블릿 */
+
+/* 모바일 430px */
+@media screen and (max-width: 440px) {
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    /* header */
+    header {
+        height: 3.5rem;
+        padding: 0 0.5rem;
+    }
+
+    header .logo a {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .m_nav .snb_back {
+        display: inline-block;
+        font-size: 1rem;
+        position: absolute;
+        top: 1.3rem;
+        right: 1.3rem;
+    }
+
+    .m_nav .sub li a {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+
+    /* header */
+
+    /* #main 공통 */
+    #main {
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    #main h2 {
+        font-size: 1.6rem;
+    }
+
+    /* 아티스트 이름 부분 (공통아님) */
+    .toy {
+        /* 유희열 */
+        width: 11.5rem;
+    }
+
+    .name {
+        width: 7.5rem;
+    }
+
+    /* 아티스트 이름 부분 (공통아님) */
+    .site {
+        width: 100%;
+    }
+
+    .site a {
+        font-size: 0.8rem;
+    }
+
+    .site a:after {
+        top: 50%;
+        right: -20px;
+    }
+
+    /* 아티스트 프로필 사진부분 (공통아님) */
+    .profile figure {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .profile .jaesuk_photo {
+        /* 유재석 */
+        background: url(../img/artist/jaesuk_photo.png) top / cover;
+        height: 30rem;
+    }
+
+    .profile .hyori_photo {
+        /* 이효리 */
+        background: url(../img/artist/artist08.jpg) center / cover;
+        height: 30rem;
+    }
+
+    /* 아티스트 프로필 사진부분 (공통아님) */
+    .main_text {
+        max-width: 100%;
+    }
+
+    .main_text .text {
+        font-size: 0.8rem;
+    }
+
+    .main_text .text2 {
+        font-size: 0.8rem;
+        margin-bottom: 0.75rem;
+    }
+
+    /* //#main 공통 */
+
+    /* content 공통*/
+    .content .title {
+        width: 100%;
+    }
+
+    .content .title a {
+        font-size: 1rem;
+    }
+
+    /* content 공통*/
+
+    /* album_slide 공통 */
+    .swiper-slide .card .album {
+        /* 앨범 이미지 */
+        height: 73%;
+    }
+
+    .swiper-slide .card .lp {
+        /* lp판 이미지 */
+        height: 71%;
+    }
+
+    .album_slide .swiper-slide .card>p {
+        /* 텍스트 위치 */
+        bottom: 12%;
+    }
+
+    .album_slide .swiper-slide .card:hover .album {
+        left: 3%;
+    }
+
+    .album_slide .swiper-slide .card:hover .lp {
+        right: 3%;
+    }
+
+    .album_slide .swiper-slide .card:hover>p {
+        left: 3%;
+    }
+
+    .streaming_btn {
+        max-width: 80%;
+        margin: 0.5rem auto 0;
+    }
+
+    .album_slide .swiper-button-next,
+    .album_slide .swiper-button-prev {
+        /* 슬라이드 버튼 위치 */
+        top: 36.5%;
+    }
+
+    /* //album_slide 공통 */
+
+    /* concert_silde 공통 */
+    .concert_slide {
+        height: 14rem;
+    }
+
+    .concert_slide .swiper-slide {
+        height: 80%;
+    }
+
+    /* //concert_silde 공통 */
+    /* concert(유희열) */
+    .concert_cont {
+        display: block;
+    }
+
+    .concert {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .concert .concert_img {
+        max-width: 100%;
+        height: 75%;
+    }
+
+    /* //concert(유희열) */
+
+    /* contents_slide 공통 */
+    .contents_slide {
+        height: 11.5rem;
+    }
+
+    .swiper-slide .card .contents {
+        /* 슬라이드 이미지 부분 */
+        height: 100%;
+    }
+
+    .m_top {
+        display: block;
+    }
+
+    /* //contents_slide 공통 */
+
+    /* footer */
+    footer {
+        padding: 2rem 1.5rem 4rem;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right .back>a {
+        display: none;
+    }
+
+    .right .sns {
+        margin: 1rem 0 0;
+    }
+
+    .right .copy {
+        left: 1.5rem;
+        bottom: 0;
+        padding-bottom: 2rem;
+    }
+
+    /* 탑 버튼 */
+    .m_top {
+        display: block;
+        text-align: right;
+    }
+
+    .m_top>a {
+        display: inline-block;
+        text-align: left;
+        width: 3rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 2.5rem;
+        background: url(../img/logo_img/arrow_up.png) no-repeat right / 18px;
+        opacity: 0.6;
+    }
+}
+
+/* 모바일 430px */
+
+/* 모바일 414px */
+@media screen and (max-width: 414px) {
+    .site a:after {
+        top: 50%;
+        right: -18px;
+    }
+
+    /* album_slide 공통 */
+    .swiper-slide .card .album {
+        /* 앨범 이미지 */
+        height: 70%;
+    }
+
+    .swiper-slide .card .lp {
+        /* lp판 이미지 */
+        height: 68%;
+    }
+
+    .album_slide .swiper-slide .card>p {
+        /* 텍스트 위치 */
+        bottom: 15%;
+    }
+    .album_slide .swiper-button-next,
+    .album_slide .swiper-button-prev {
+        /* 슬라이드 버튼 위치 */
+        top: 35.2%;
+    }
+    /* //album_slide 공통 */
+
+    /* concert_silde 공통 */
+    .concert_slide {
+        height: 13.5rem;
+    }
+
+    .concert_slide .swiper-slide {
+        height: 80%;
+    }
+
+    /* //concert_silde 공통 */
+
+    /* contents_slide 공통 */
+    .contents_slide {
+        height: 11rem;
+    }
+
+    /* //contents_slide 공통 */
+}
+
+/* 모바일 414px */
+
+/* 모바일 390px */
+@media screen and (max-width: 390px) {
+    .site a:after {
+        top: 50%;
+        right: -15px;
+    }
+
+    /* album_slide 공통 */
+    .swiper-slide .card .album {
+        /* 앨범 이미지 */
+        height: 65%;
+    }
+
+    .swiper-slide .card .lp {
+        /* lp판 이미지 */
+        height: 63%;
+    }
+
+    .album_slide .swiper-slide .card>p {
+        /* 텍스트 위치 */
+        bottom: 21%;
+    }
+
+    .album_slide .swiper-slide .card:hover .album {
+        left: 3%;
+    }
+
+    .album_slide .swiper-slide .card:hover .lp {
+        right: 3%;
+    }
+
+    .album_slide .swiper-slide .card:hover>p {
+        left: 3%;
+    }
+    .album_slide .swiper-button-next,
+    .album_slide .swiper-button-prev {
+        /* 슬라이드 버튼 위치 */
+        top: 32.5%;
+    }
+
+    /* //album_slide 공통 */
+
+    /* concert_silde 공통 */
+    .concert_slide {
+        height: 13rem;
+    }
+
+    /* //concert_silde 공통 */
+
+    /* contents_slide 공통 */
+    .contents_slide {
+        height: 10.5rem;
+    }
+
+    .swiper-slide .card .contents {
+        /* 슬라이드 이미지 부분 */
+        height: 100%;
+    }
+
+    /* //contents_slide 공통 */
+}
+
+/* 모바일 390px */
+
+/* 모바일 375px */
+@media screen and (max-width: 375px) {
+    .site a:after {
+        top: 50%;
+        right: -12px;
+    }
+
+    /* album_slide 공통 */
+    .swiper-slide .card .album {
+        /* 앨범 이미지 */
+        height: 63%;
+    }
+
+    .swiper-slide .card .lp {
+        /* lp판 이미지 */
+        height: 61%;
+    }
+
+    .album_slide .swiper-slide .card>p {
+        /* 텍스트 위치 */
+        bottom: 22%;
+    }
+
+    .album_slide .swiper-slide .card:hover .album {
+        left: 2.5%;
+    }
+
+    .album_slide .swiper-slide .card:hover .lp {
+        right: 2.5%;
+    }
+
+    .album_slide .swiper-slide .card:hover>p {
+        left: 2.5%;
+    }
+    .album_slide .swiper-button-next,
+    .album_slide .swiper-button-prev {
+        /* 슬라이드 버튼 위치 */
+        top: 31.5%;
+    }
+    /* //album_slide 공통 */
+
+    /* concert_silde 공통 */
+    .concert_slide {
+        height: 12rem;
+    }
+
+    /* //concert_silde 공통 */
+
+    /* contents_slide 공통 */
+    .contents_slide {
+        height: 9.5rem;
+    }
+
+    /* //contents_slide 공통 */
+}

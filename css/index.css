@@ -111,12 +111,12 @@ nav .gnb li:first-child > a {
     max-width: 100%;
     height: 100vh;
     box-sizing: border-box;
+    padding-top: 78px;
 }
 
 .main_video > iframe {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 /* //main_video */
 
